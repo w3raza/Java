@@ -1,0 +1,11 @@
+Proszę napisać klasy Student, StudentManagementService, EmailService, Faculty wraz z odpowiednimi polami i metodami, które pozwolą na przeprowadzenie zadanych operacji na studentach.
+
+Klasa Student powinna zawierać informacje o imieniu, nazwisku, numerze indeksu, adresie e-mail i ocenach studenta oraz wszystkie potrzebne metody (w tym także przeciążenie metod public String toString() oraz public boolean equals(Object obj)). (5 p.)
+
+Klasa StudentManagementService powinna przechowywać studentów, umożliwiać możliwość dodania, usunięcia studenta, wyświetlenia informacji o wszystkich studentach oraz znalezienia studenta z najwyższą średnią. (3 p.)
+
+Klasa EmailService powinna zawierać metodę pozwalającą na wygenerowanie adresu e-mail dla studenta. (1 p.)
+
+Klasa Faculty powinna zawierać wyłącznie dwa niemodyfikowalne pola typu String. (1 p.)
+
+Do przechowywania studentów w klasie StudentManagementService oraz ocen w klasie Student można wykorzystać zwykłą tablicę (dla uproszczenia przyjmijmy, że nie będzie więcej niż 10 obiektów w takiej tablicy) lub (dla chętnych) można skorzystać z klasy ArrayList.
