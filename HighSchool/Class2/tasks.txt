@@ -1,0 +1,20 @@
+1.Napisz program, który odczytuje liczbę rzeczywistą i wyświetla wartość całkowitą tej liczby.
+2.Napisz program, który wczytuje wiek i sprawdza czy osoba jest pełnoletnia.
+3.Napisz program, który sprawdza czy liczba wprowadzone przez użytkownika jest podzielna przez 4.
+4.Napisz program, który wypisuje liczby naturalne od 1 do 100.
+5.Napisz program, który wczytuje od użytkownika ciąg znaków i wypisuje ostatnią literę.
+6.Napisz program, który odczytuje napis i wypisuje go wspak.
+7.Napisz program, który odczytuje tekst i sprawdza czy jest ono palindromem.
+8.Napisz program, który wypisuje co trzecią literę podanego wyrazu.
+9.Napisz program, który odczytuje dany wyraz z konsoli tak długo aż natrafi na poprawnie wprowadzone hasło.
+10.Napisz program, który wczytuje od użytkownika cztery liczby i umieszcze je w tablicy dwuwymiarowej. Następnie oblicza wyznacznik.
+11.Napisz program, w którym będzie zadeklarowana tablica dwuwymiarowa 3x3 liczb całkowitych. Liczby będą dobrane losowo z przedziału od 10 do 99. Oblicz sumę elementów znajdujacych się ponad główną przekątną takiej macierzy.
+12.Napisz metodę, która sprawdzi czy z trzech podanych długości boków można zbudować trójkąt a następnie obliczy jego pole.
+13.Napisz metodę, która wyznacza sumę cyfr zadanej liczby całkowitej.
+14.Napisz metodę, która stwierdza czy liczba jest pierwsza.
+15.Napisz metodę, która oblicza liczbę dzielników podanej liczby.
+16.Napisz metodę, która odczytuje a i n i zwraca a do potęgi n.
+17.Napisz metodę, którą wczytuje n liczb do tablicy, a następnie wypisuje je w odwrotnej kolejności.
+18.Dla tablicy liczb całkowitych znajdź jednocześnie minimum i maksimum tablicy
+19.Napisz program, który wyznaczy ilość wystąpień liczby k w podanym ciągu liczb.
+20.Napisz program TOTOLOTEK, który losuje 6 liczb z przedziału <1,49> Liczby nie mogą sie powtarzać.
