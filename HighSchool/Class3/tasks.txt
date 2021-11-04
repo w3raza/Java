@@ -1,0 +1,27 @@
+1.Napisz program, który sprawdza czy ciąg znaków jest palindromem.
+2.Napisz program, który sprawdza czy podany wyraz jest poprawnym kodem pocztowym
+3.Napisz program, który oblicza liczbę małych liter w podanym wyrazie.
+4.W tablicy jednowymiarowej znajdź liczbę, która występuje najczęściej.
+5.Sprawdź czy w tablicy jakaś liczba występuje co najmniej trzykrotnie.
+6.Jest dana tablica 10 liczb całkowitych. Sprawdź ile jest różnych reszt z dzielenia tych liczb przez 37.
+7.Znajdz liczbę z przedziału 2 do 10000, która ma największą liczbę dzielników
+8.Napisz program, który będzie umożliwiał tłumaczenie słów z języka polskiego na angielski.
+9.Napisz program, który doda 100 000 elementów "a" do Stringa i tyle samo do StringBuildera i sprawdzi czas działania obu operacji
+10.Napisz program, który doda 100 000 elementów do ArrayList i sprawdzi wydajność wyświetlania jej elementów przy użyciu różnych pętli    for (int i=0,...), foreach, Iterator
+11.Korzystając ze Stosu, napisz funkcję, która odczytuje daną liczbę i zwraca liczbę zapisaną w systemie dwójkowym. Argumentem funkcji jest liczba całkowita(int), zwróconym wynikiem ciąg znaków (String).
+12.Napisz program, w którym będzie zadeklarowana lista elementów typu String, następnie napisz metodę która będzie sprawdzać czy występują w niej powtarzające się elementy.
+13.Napisz program, w którym będzie zadeklarowana lista elementów typu String, następnie napisz metodę, która będzie zliczać liczbę wystąpień poszczególnych elementów.
+14.Napisz program, który wczytuje liczby z pliku. Znajduje części wspólne i liczby które znajdują się w pierwszym pliku , a w drugim ich nie ma.
+15.Napisz program, który posortuje zdefiniową tablicę. Użyj klasy TreeSet.
+16.Napisz program, kóry pokaże różnicę w sposobie zapisu elementów do HashMapy, LinkedHashMapy i TreeMapy.
+17.Utwórz klasę Book przechowującą informacje o książce: np title,author,pageCount,price,
+   1)W klasie testujacej utwórz listę książek i posortuj je po autorze.
+   2)Napisz komparatory do sortowania ksiązek po ilości stron oraz po cenie i tytule.
+   3)Napisz klasę testującą cały program.
+18.Napisz aplikację pozwalającą przechowywać informacje o pracownikach (imię, nazwisko, wiek, wzrost, płeć, data zatrudnienia).
+Aplikacja powinna ponadto umożliwiać:
+a)Dodawanie nowych pracowników
+b)wyszukiwanie pracowników według różnych kryteriów
+c)wyszukiwanie pracownika najstarszego, najmłodszego itp.
+d)wyszukiwanie pracowników o najwyższym stażu w firmie w odniesieniu do bieżącej daty
+e)sortowanie pracowników według różnych kryteriów: nazwiska, wieku, wagi
