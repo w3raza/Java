@@ -91,5 +91,4 @@ public class Bank {
         } else
             System.out.println("Cannot transfer, wrong bank");
     }
-
 }
