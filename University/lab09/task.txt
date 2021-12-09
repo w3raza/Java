@@ -1,0 +1,32 @@
+(1 pkt.) Napisz dwie klasy reprezentujące wyjątki: OptionNotRecognizedException oraz WallException z konstruktorami przyjmującymi łańcuch znakowy będący informacją o wyjątku.
+(3 pkt.) Napisz program pobierający od użytkownika liczbę całkowitą większą od 1, która będzie oznaczała rozmiar planszy. Proszę obsłużyć wyjątki podania błędnej wartości (np. znak, liczba niecałkowita albo liczba całkowita mniejsza od 2). Wczytywanie musi wznawiać wykonanie przy pomocy pętli, która będzie powtarzana, dopóki wyjątki nie przestaną być zgłaszane. Przykład działania:
+
+Podaj rozmiar planszy:
+test
+BLAD: Podaj liczbe calkowita!
+
+Podaj rozmiar planszy:
+2.3
+BLAD: Podaj liczbe calkowita!
+
+Podaj rozmiar planszy1:
+-15
+BLAD: Zbyt mala wartosc nx: -10!
+
+Podaj rozmiar planszy:
+7
+ 
+(1 pkt.) Utwórz kwadratową planszę (tablicę znakową) o rozmiarze  nx × nx. Początkowe wypełnienie planszy:
+znaki 'X' wypełniają całą planszę z prawdopodobieństwem 0.3, w pozostałych elementach są spacje;
+znak 'o' w dowolnym miejscu planszy (oznaczenie pozycji gracza).
+(2 pkt.) Program powinien pobierać od użytkownika znak i interpretować go zgodnie z dostępnymi opcjami:
+'l' ⇒ gracz porusza się na planszy w lewo,
+'r' ⇒ gracz porusza się na planszy w prawo,
+'u' ⇒ gracz porusza się na planszy w górę,
+'d' ⇒ gracz porusza się na planszy w dół,
+'q' ⇒ zakończenie gry (to jest jedyne miejsce, w którym program powinien kończyć działanie).
+Po wybraniu i zrealizowaniu odpowiedniej opcji plansza powinna zostać wyrysowana na nowo.
+(3 pkt.) Grę proszę zrealizować przy pomocy wyjątków, które powinny raportować:
+próbę wyjścia poza planszę,
+próbę wejścia na zabronione pole ('X') ⇒ wyjątek WallException,
+wpisanie nierozpoznanego znaku: wyjątek OptionNotRecognizedException.

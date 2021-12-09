@@ -1,3 +1,5 @@
+Proszę pobrać plik Main.java i dopisać do niego potrzebne funkcjonalności. Pliku Main.java nie należy modyfikować.
+
 Proszę napisać klasy Student, StudentManagementService, EmailService, Faculty wraz z odpowiednimi polami i metodami, które pozwolą na przeprowadzenie zadanych operacji na studentach.
 
 Klasa Student powinna zawierać informacje o imieniu, nazwisku, numerze indeksu, adresie e-mail i ocenach studenta oraz wszystkie potrzebne metody (w tym także przeciążenie metod public String toString() oraz public boolean equals(Object obj)). (5 p.)
@@ -9,3 +11,34 @@ Klasa EmailService powinna zawierać metodę pozwalającą na wygenerowanie adre
 Klasa Faculty powinna zawierać wyłącznie dwa niemodyfikowalne pola typu String. (1 p.)
 
 Do przechowywania studentów w klasie StudentManagementService oraz ocen w klasie Student można wykorzystać zwykłą tablicę (dla uproszczenia przyjmijmy, że nie będzie więcej niż 10 obiektów w takiej tablicy) lub (dla chętnych) można skorzystać z klasy ArrayList.
+
+Przykładowe wyjście z programu:
+
+Student is already in database!
+
+Marek Cacki (300123)
+
+*** Students ***
+Tomasz Abacki (123456)
+Wojciech Babacki (297999)
+Marek Cacki (300123)
+
+Tomasz's mail (before set): null
+Tomasz's mail: Tomasz.Abacki@WFiIS.pl
+Wojciech's mail: Wojciech.Babacki@WMS.pl
+Marek's mail: Marek.Cacki@WIMiR.pl
+
+Student is not exist in database!
+
+*** Students ***
+Tomasz Abacki (123456) - 3.0 
+Marek Cacki (300123) - 4.5 3.5 5.0
+
+Tomasz's average: 3.0
+Wojciech's average: NaN
+Marek's average: 4.333333333333333
+The best student is: Marek Cacki (300123) - 4.5 3.5 5.0
+
+studentWojciech == studentWojciech2: false
+studentWojciech.equals(studentWojciech2): true
+studentTomasz.equals(studentTomasz2): false

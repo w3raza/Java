@@ -1,0 +1,17 @@
+Do realizacji dzisiejszego zadania można korzystać z rozwiązania z poprzedniego laboratorium, ale nie jest to wymagane i konieczne.
+
+Proszę pobrać plik Main.java i dopisać do niego potrzebne funkcjonalności. Pliku Main.java nie należy modyfikować.
+
+Proszę napisać klasę Student, która będzie zawierać pola przechowujące imię, nazwisko, numer indeksu oraz oceny (jako tablicę liczb typu double). Obiekty tej klasy muszą być niezmienne (immutable). Proszę również zadbać o przeciążenie metod equals() oraz toString(). Do porównania tablic proszę wykorzystać odpowiednią metodę z klasy Arrays. Proszę zaimplementować metodę getGrades(), która zwróci tablicę z ocenami.
+
+Następnie proszę utworzyć klasę Builder, która będzie realizować wzorzec projektowy budowniczego dla obiektów klasy Student. Klasa powinna zawierać metody pozwalające na ustawienie poszczególnych danych potrzebnych do stworzenia studenta oraz metodę build() zwracającą nowo utworzony obiekt (jeśli brakuje danych wymaganych, imienia, nazwiska lub numeru indeksu, metoda powinna wyświetlić odpowiedni komunikat i zakończyć działanie zwracając null).
+
+Przykładowy wynik wykonania programu:
+
+Adam Abacki (123456) - 5.0 3.5 
+[2.0, 3.5]
+Adam Abacki (123456) - 5.0 3.5
+Jacek Cacki (777777)
+Last name is required!
+studentJacek == studentJacek2: false
+studentJacek.equals(studentJacek2): true

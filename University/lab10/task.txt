@@ -1,0 +1,40 @@
+Proszę napisać program obsługujący jeden parametr wywołania programu podany w formie łańcucha z funkcją matematyczną, np.:
+
+"sin(3.14)"
+"cos(1.57)"
+"pow(2, 10)"
+Parametr wywołania proszę rozdzielić instrukcją:
+
+String splitted[] = splitArgs(args[0]);
+przy pomocy metody:
+
+public static String[] splitArgs(String arg) {
+    return Arrays.stream(arg.split("[\\s+(),]")).filter(w -> w.isEmpty() == false).toArray(String[]::new);
+}
+Korzystając z mechanizmu refleksji program powinien wypisać wynik obliczeń żądanych przez użytkownika. W tym celu należy:
+
+przy użyciu metody getMethod() z klasy Class znaleźć odpowiednią metodę klasy Math,
+wywołać znalezioną metodę dla zadanych przez użytkownika wartości,
+wypisać wynik obliczeń.
+Program musi obsługiwać wyjątki, na które może się natknąć w czasie działania (wystarczy wypisać informację o błędzie dla użytkownika oraz samodzielnie zakończyć działanie programu). Dla uproszczenia proszę ograniczyć się tylko do tych metod z klasy java.lang.Math, które przyjmują dokładnie jeden lub dwa parametry typu double.
+
+Przykładowe uruchomienia programów:
+
+java Lab10 "sin(3.14)"
+Wynik: 0.0015926529164868282
+java Lab10 "cos(1.57)"
+Wynik: 7.963267107332633E-4
+java Lab10 "pow(2, 10)"
+Wynik: 1024.0
+java Lab10 "pow(2, 10, 56)"
+Zla liczba argumentow funkcji! Podaj jedna lub dwie liczby.
+java Lab10 "pow()"
+Zla liczba argumentow funkcji! Podaj jedna lub dwie liczby.
+java Lab10 "pow(2)"
+Nie ma takiej metody!
+java Lab10 "test(45)"
+Nie ma takiej metody!
+java Lab10 "cos(test)"
+Argumenty funkcji musza byc liczbami!
+java Lab10
+Nie podano nic do obliczenia!
