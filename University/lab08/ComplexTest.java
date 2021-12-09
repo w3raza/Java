@@ -1,11 +1,8 @@
 import org.junit.jupiter.api.*;
+import org.junit.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ComplexTest{
-    public ComplexTest(){
-        System.out.println("Complex Test");
-    }
-
     @Test
     public void testFirstConstructor(){
         String expectedResults = "0.0+0.0i";
@@ -50,40 +47,37 @@ public class ComplexTest{
         Complex complex = new Complex();
 
         assertEquals(ReExpectedResults, complex.getRe());
-
         assertEquals(ImExpectedResults, complex.getIm());
     }
 
     @Test
     public void testMod(){
-        Complex complex = new Complex();
+        Complex complex = new Complex(1,2);
         boolean isTrue = true;
 
         if(complex.mod()>=0.0)
-        {isTrue = true;}
-        else {isTrue=false;}
+            isTrue = true;
+        else 
+            isTrue=false;
 
         assertTrue(isTrue);
     }
 
      @Test
     public void testConjugate(){
-        double ReExpectedResults = 1.0;
-        String ImExpectedResults = "-1.0i";
+        String ImExpectedResults = "0.0+4.0i";
+        Complex complex = new Complex(0, -4);
+        complex.conjugate();
 
-        Complex complex = new Complex(1.0,1.0);
-
-       assertEquals(ReExpectedResults, complex.getRe());
-       assertEquals(ImExpectedResults, complex.conjugate());
+       assertEquals(ImExpectedResults, complex.toString());
     }
 
     @Test
     public void testOposite(){
-        String expectedResults = "-1.0-1.0i";
+        String expectedResults = "-2.0+4.0i";
+        Complex complex = new Complex(2, -4);
+        complex.opposite();
 
-        Complex complex = new Complex(1.0,1.0);
-
-       assertEquals(expectedResults, complex.opposite());
+       assertEquals(expectedResults, complex.toString());
     }
-
 }
