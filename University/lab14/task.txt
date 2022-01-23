@@ -1,0 +1,28 @@
+W dzisiejszym zadaniu zajmiemy się jednym z klasycznych informatyczny problemów synchronizacji - problemem producenta i konsumenta. W problemie występują dwa rodzaje procesów: producent i konsument, którzy dzielą wspólny zasób – bufor – dla produkowanych (i konsumowanych) jednostek. Zadaniem producenta jest wytworzenie produktu, umieszczenie go w buforze i rozpoczęcie pracy od nowa. W tym samym czasie konsument ma pobrać produkt z bufora. Problemem jest taka synchronizacja procesów, żeby producent nie dodawał nowych jednostek gdy bufor jest pełny, a konsument nie pobierał gdy bufor jest pusty.
+
+Proszę napisać:
+
+(0.5 p.) Klasę Bufor, która powinna przechowywać maksymalną pojemność oraz aktualny rozmiar (tzn. ile elementów jest przechowywanych w buforze). Dla uproszczenia nie przechowujemy żadnych dodatkowych obiektów a jedynie zwiększamy wartość zmiennej przechowującej rozmiar.
+(0.5 p.) Konstruktor klasy Bufor, który powinien przyjmować maksymalną pojemność bufora.
+(3 p.) Synchronizowaną metodę put() "dodającą" element do bufora. Jeśli bufor jest pełny i producent próbuje dodać nowy obiekt - producent musi poczekać na wolne miejsce. Metoda powinna wypisywać informację o wątku na początku wykonywania, informację o oczekiwaniu na zwolnienie zasobów oraz informację o "dodaniu" elementu do bufora.
+(3 p.) Synchronizowaną metodę get() "zabierającą" element z bufora. Jeśli bufor jest pusty i konsument próbuje zabrać obiekt - producent musi poczekać na wyprodukowanie elementu. Metoda powinna wypisywać informację o wątku na początku wykonywania, informację o oczekiwaniu na dodanie zasobów oraz informację o "zabraniu" elementu z bufora.
+(1 p.) Klasy Producent i Consumer rozszerzające klasę Thread.
+(2 p.) Przeciążenie metody run() z klasy Thread w klasach Producent i Consumer, w którym wykonawana będzie odpowiednia operacja na buforze (dodanie elementu przez producenta lub zabranie przez konsumenta). Producenci i konsumenci pracują cały czas - program kończy działanie dopiero po naciśnięciu CTRL + C. Między kolejnymi operacjami w obrębie jednego wątku (tzn. dodaniem/zabraniem kolejnego elementu) proszę odczekać losową ilość czasu, np. Thread.sleep((int)(Math.random() * 10000)).
+Przykładowy fragment wykonania programu z buforem o pojemności 2 oraz dwoma producentami i dwoma konsumentami:
+
+Rozpoczynam dodawanie elementu do bufora. Producent: Thread[Thread-0,5,main]
+Dodano element do bufora. Zajetosc: 1/2
+Rozpoczynam dodawanie elementu do bufora. Producent: Thread[Thread-2,5,main]
+Dodano element do bufora. Zajetosc: 2/2
+Rozpoczynam wyjmowanie - Thread[Thread-3,5,main]
+Zabrano element z bufora. Zajetosc: 1/2
+Rozpoczynam wyjmowanie - Thread[Thread-1,5,main]
+Zabrano element z bufora. Zajetosc: 0/2
+Rozpoczynam dodawanie elementu do bufora. Producent: Thread[Thread-0,5,main]
+Dodano element do bufora. Zajetosc: 1/2
+Rozpoczynam dodawanie elementu do bufora. Producent: Thread[Thread-0,5,main]
+Dodano element do bufora. Zajetosc: 2/2
+Rozpoczynam dodawanie elementu do bufora. Producent: Thread[Thread-2,5,main]
+Bufor pełny. Czekam na zabranie elementu...
+Rozpoczynam dodawanie elementu do bufora. Producent: Thread[Thread-0,5,main]
+Bufor pełny. Czekam na zabranie elementu..

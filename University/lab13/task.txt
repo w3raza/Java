@@ -1,0 +1,23 @@
+W dzisiejszym zadaniu wcielamy się w rolę pilota łodzi podwodnej. Łódź podwodna może przyjąć serię komend takich jak "forward", "down" i "up":
+down X zwiększa cel o X jednostek,
+up X zmniejsza cel o X jednostek,
+forward X zwiększa poziomą pozycję o X jednostek oraz zwiększa głębokość o cel * X jednostek.
+Proszę zauważyć, że ponieważ znajdujemy się na łodzi podwodnej, dół i góra wpływają na głębokość, a więc mają odwrotny skutek od tego, którego można by się spodziewać.
+
+Pozioma pozycja, głębokość oraz cel zaczynają się od 0.
+
+Przykladowe działanie komend może wyglądać następująco:
+forward 5 zwiększa poziomą pozycję o 5, więc wynosi ona 5. Ponieważ cel wynosi 0, głębokość się nie zmienia.
+down 5 zwiększa cel o 5, zatem wynosi on 5.
+forward 8 zwiększa poziomą pozycję o 8, więc wynosi ona 13. Ponieważ cel wynosi 5, głębokość zwiększa się o 8*5=40.
+up 3 zmniejsza cel o 3, więc wynosi on 2.
+down 8 zwiększa cel o 8 więc wynos on 10.
+forward 2 zwiększa poziomą pozycję o 2, więc wynosi ona 15. Ponieważ cel wynosi 10, głębokość zwiększa się o 2*10=20, więc wynosi 60.
+W pliku input.dat znajduje się plan kursu lodzi podwodnej.
+
+(1 pkt.) Napisz program, który przy pomocy BufferedReader oraz InputStreamReader z pakietu java.io pobierze od użytkownika nazwę pliku tekstowego z danymi wejściowymi.
+(4 pkt.) Dane należy wczytać do programu, otwierając plik za pośrednictwem Files.newBufferedReader(...) z pakietu java.nio (wczytywanie ma działać uniwersalnie, tzn. niezależnie od liczby wierszy danych). Program powinien kończyć działanie w przypadku niepowodzenia otwarcia pliku.
+(1 pkt.) Na podstawie planu kursu należy obliczyć końcową wartość poziomej pozycji oraz głębokości, na której znajdzie się łódź.
+(4 pkt.) Następnie program powinien pobrać od użytkownika nazwę pliku wyjściowego, w którym należy zapisać dane w formie dwóch wartości: końcowa pozioma pozycja oraz końcowa głębokość.
+Program powinien sprawdzić, czy plik o takiej nazwie już istnieje -- jeśli tak, należy zapytać użytkownika, czy ma zostać nadpisany. Jeśli użytkownik odpowie "nie" -- program powinien poprosić o nową nazwę pliku.
+Zapisywanie do pliku powinno być zrealizowane przy użyciu Files.newBufferedWriter(...) z pakietu java.nio.

@@ -1,0 +1,17 @@
+Proszę napisać program obsługujący dwa parametry wywołania: liczby całkowite n oraz m (n > m).
+
+(1 pkt.) Utwórz trzy tablice łańcuchów: 
+t1 -- n-elementowa tablica losowych łańcuchów (łańcuchy powinny składać się z małych i dużych liter; długość każdego łańcucha niech będzie losowa z przedziału [5,20]).
+t2 -- tablica utworzona z m łańcuchów wylosowanych z t1.
+t3 -- tablica utworzona z m losowych łańcuchów, niewystępujących w tablicy t1.
+Utwórz cztery puste kolekcje dla typu String: ArrayList, LinkedList, TreeMap, oraz HashMap. Następnie dla każdej z kolekcji policz i porównaj czas, który zajmie:
+(2 pkt.) wypełnienie kolekcji wszystkimi elementami tablicy t1 (proszę wypełniać po jednym elemencie); w przypadku map niech to będą klucze,
+(2 pkt.) wyszukanie w kolekcji wszystkich elementów tablicy t2,
+(2 pkt.) wyszukanie w kolekcji wszystkich elementów tablicy t3,
+(1 pkt.) usunięcie wszystkich elementów z kolekcji (naraz).
+Obliczanie czasu: np. metoda nanoTime().
+(2 pkt.) Dodatkowo dla kolekcji ArrayList oraz LinkedList (przed usunięciem ich elementów :) ) proszę zmierzyć i porównać czas, który zajmą trzy różne sposoby przejścia po wszystkich elementach:
+zwykła pętla for po indeksach (+ metoda get),
+pętla for-each,
+pętla z iteratorem.
+Niech pętle nie robią nic poza wyciągnięciem referencji do każdego z elementów (żeby nie zaburzyć pomiaru czasu).

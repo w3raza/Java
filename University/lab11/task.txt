@@ -1,0 +1,15 @@
+Proszę napisać klasę sparametryzowaną Stack, która będzie reprezentowała stos utworzony z elementów zadanego typu T. Klasa powinna zawierać:
+trzy prywatne pola: referencję do tablicy typu T, aktualny rozmiar stosu, maksymalny rozmiar stosu,
+konstruktor, do którego będzie przekazany maksymalny rozmiar stosu. Konstruktor powinien alokować tablicę typu T,
+metodę public boolean isEmpty(), zwracającą prawdę, jeśli stos jest aktualnie pusty,
+metodę public boolean isFull(), zwracającą prawdę, jeśli na stosie znajduje się już maksymalna liczba obiektów,
+metodę public void push(T x) throws StackOverflowException, która dołącza x na koniec stosu (metoda powinna rzucać wyjątek, jeśli stos jest pełny i nie da się dołączyć nowego elementu),
+metodę public T pop() throws StackUnderflowException, która usuwa ostatnio dodany element ze stosu i zwraca go (metoda powinna rzucać wyjątek, jeśli stos jest pusty i nie da się usunąć elementu),
+metodę public int getCurrentSize(), zwracającą aktualny rozmiar stosu,
+metodę public int getMaxSize(), zwracającą maksymalny rozmiar stosu.
+Proszę napisać klasę StackUtils posiadającą wyłącznie metody statyczne rozwijające działanie stosu:
+
+metoda toString zwracającą łańcuch złożony z elementów znajdujących się aktualnie na stosie,
+metodę compare sprawdzającą czy podane jako parametr stosy są równe,
+metodę swap zamieniającą miejsce dwóch elementów w stosie (metoda powinna sprawdzać poprawność przekazanych jako argument indeksów)
+Jako rozwiązanie proszę przesłać wszystkie pliki *.java.
